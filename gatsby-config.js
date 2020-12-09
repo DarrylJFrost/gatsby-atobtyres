@@ -10,6 +10,13 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `pages`,
+        path: `${__dirname}/src/images`
+      }
+    },
+    {
       resolve: `gatsby-plugin-sass`,
       options: {
         implementation: require('sass')
