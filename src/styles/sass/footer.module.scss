@@ -1,0 +1,42 @@
+@import '../sass/abstract/variables.scss';
+
+.footer {
+  padding: 50px;
+  background: $foot-bg;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  .foot-center {
+    width: 90vw;
+    max-width: $max-width;
+    margin:0 auto;
+    .foot-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+      font-family: 'Roboto', sans-serif;
+      div:not(:last-of-type) {
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .footer {
+    .foot-center {
+      .foot-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        .align-right {
+          text-align: right;
+        }
+      }
+    }
+  }
+  
+}

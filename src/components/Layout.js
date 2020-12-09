@@ -21,7 +21,7 @@ const Layout = ({ children }) => {
         {/* <Hero /> */}
         {children}
         {/* <Question /> */}
-        {/* <Footer /> */}
+        <Footer />
         </>
     )
 }

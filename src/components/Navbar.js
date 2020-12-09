@@ -21,7 +21,7 @@ const query = graphql`
   }
 `
 
-const Navbar = ( ) => {
+const Navbar = () => {
   const data = useStaticQuery(query)
   const {file: {image: {fixed}}} = data
   return (
