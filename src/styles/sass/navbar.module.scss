@@ -9,9 +9,37 @@
     width: 90vw;
     max-width: $nav-max-width;
     margin:0 auto;
+    .nav-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 3rem;
+      .toggle-btn {
+        font-size: 2rem;
+        background: transparent;
+        border-color: transparent;
+        color: black;
+        cursor: pointer;
+        transition: $transition;
+      }
+    }
   }
   .nav-links {
     display: none;
+    li {
+      .page-link {
+        color: $marks-colour;
+        font-weight: bold;
+        letter-spacing: $spacing;
+        font-size: 1rem;
+        transition: $transition;
+        font-family: 'Roboto', sans-serif;
+        text-transform: capitalize;
+        cursor: pointer;
+        padding: 0.25rem 0.5rem;
+        border-radius: $radius;
+      }
+    }
   }
 }
 
@@ -21,8 +49,12 @@
     grid-template-columns: auto 1fr auto;
     column-gap: 2rem;
     align-items: center;
+    .toggle-btn {
+      display: none;
+    }
     .nav-links {
       display: flex;
+      justify-content: center;
     }
   }
   

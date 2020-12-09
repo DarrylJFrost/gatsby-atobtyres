@@ -27,15 +27,15 @@ const Navbar = ( ) => {
   return (
     <nav className={styles.navbar}>
       <div className={styles.navCenter}>
-        <div>
+        <div className={styles.navHeader}>
           <Link to="/">
             <Img fixed={fixed}/>
           </Link>
-          <button>
+          <button className={styles.toggleBtn}>
             <FontAwesomeIcon icon={faBars}/>
           </button>
         </div>
-        <Links styleClass={styles.navLinks}/>
+        <Links styleClass={styles.navLinks} linkClass={styles.pageLink}/>
         <SocialLinks/>
       </div>
     </nav>
