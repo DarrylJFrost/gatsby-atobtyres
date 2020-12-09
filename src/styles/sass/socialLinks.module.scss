@@ -1,0 +1,27 @@
+@import '../sass/abstract/variables.scss';
+
+.social {
+  display: inline-block;
+  a {
+    font-size: 1.5rem;
+    &:not(:last-child) {
+      margin-right:0.5rem;
+    }
+  }
+}
+
+.facebook-icon {
+  color: $fb-colour;
+}
+
+.google-colour {
+  color: $google-colour;
+}
+
+.instagram-colour {
+  color: $instagram-colour;
+}
+
+.twitterColour {
+  color: $twitter-colour;
+}
