@@ -34,16 +34,16 @@ const data = [
     },
 ]
 
-export default ({ styleClass }) => {
+export default ({ styleClass, linkClass }) => {
     const tempLinks = data.map(link => {
         return (
             <li key={link.id}>
-                <Link to={link.url}>{link.text}</Link>
+                <Link to={link.url} className={`${linkClass ? linkClass : ""}`}>{link.text}</Link>
             </li>
         )
     })
     return (
-        <ul className={`page-links ${styleClass ? styleClass : ""}`}>
+        <ul className={`${styleClass ? styleClass : ""}`}>
             {tempLinks}
         </ul>
     )
