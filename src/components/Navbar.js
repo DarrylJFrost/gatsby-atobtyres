@@ -6,7 +6,7 @@ import SocialLinks from '../constants/socialLinks'
 const Navbar = () => {
   return (
     <div>
-      <SocialLinks/>
+      
     </div>
   )
 }

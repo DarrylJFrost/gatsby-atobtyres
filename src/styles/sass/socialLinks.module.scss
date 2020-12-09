@@ -1,14 +1,22 @@
 @import '../sass/abstract/variables.scss';
 
+
 .social {
-  display: inline-block;
-  a {
-    font-size: 1.5rem;
-    &:not(:last-child) {
-      margin-right:0.5rem;
+  display:none;
+}
+
+@media screen and (min-width: 800px) {
+  .social {
+    display: inline-block;
+    a {
+      font-size: 1.5rem;
+      &:not(:last-child) {
+        margin-right:0.5rem;
+      }
     }
   }
 }
+
 
 .facebook-icon {
   color: $fb-colour;
