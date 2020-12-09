@@ -21,6 +21,15 @@ module.exports = {
       options: {
         implementation: require('sass')
       },
-    }
+    },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `roboto\:400,700`
+        ],
+        display: "swap",
+      },
+    },
   ],
 }
