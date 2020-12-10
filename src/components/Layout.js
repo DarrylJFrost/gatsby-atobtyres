@@ -3,11 +3,12 @@ import React from 'react'
 // Components
 import Navbar from './Navbar'
 import Hero from './Hero'
-import Question from './Question'
+import Questions from './Questions'
 import Footer from './Footer'
 
-// Global Stylesheet
+// Global Stylesheets
 import '../styles/global.scss'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 // Font Awesome Library
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -20,7 +21,7 @@ const Layout = ({ children }) => {
         <Navbar />
         {/* <Hero /> */}
         {children}
-        {/* <Question /> */}
+        <Questions />
         <Footer />
         </>
     )

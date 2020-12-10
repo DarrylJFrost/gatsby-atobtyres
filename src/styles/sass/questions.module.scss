@@ -1,0 +1,33 @@
+@import './abstract/variables.scss';
+
+.bg-grey {
+  background: $bg-grey;
+  .contact-center {
+    width: 90vw;
+    max-width: $max-width;
+    margin: 0 auto;
+    .contact-info {
+      text-align: center;
+      svg {
+        height: 30px!important;
+      }
+      .fa-facebook-f {
+        height: 30px!important;
+      }
+    }
+  }
+}
+
+.bg {
+  padding: 100px 0;
+}
+
+@media screen and (min-width: 800px) {
+  .bg-grey {
+    .contact-center {
+      .contact-content {
+        flex-direction: row;
+      }
+    }
+  }
+}
