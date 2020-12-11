@@ -8,12 +8,20 @@
     margin: 0 auto;
     .contact-info {
       text-align: center;
+      font-weight: 700;
       svg {
         height: 30px!important;
+        width: 2rem;
+        margin: 0 auto 1.25rem;
+        color: $marks-colour;
       }
-      .fa-facebook-f {
-        height: 30px!important;
+      a {
+        display: block;
+        color: #111
       }
+    }
+    .contact-info > *:not(:first-child) {
+      margin-top: 30px;
     }
   }
 }
@@ -22,10 +30,14 @@
   padding: 100px 0;
 }
 
+.marks {
+  color: $marks-colour;
+}
+
 @media screen and (min-width: 800px) {
   .bg-grey {
     .contact-center {
-      .contact-content {
+      .contact-info {
         flex-direction: row;
       }
     }
